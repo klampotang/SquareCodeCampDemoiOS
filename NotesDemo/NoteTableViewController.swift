@@ -22,6 +22,7 @@ class NoteTableViewController: UITableViewController, NoteEditViewControllerDele
     
     func didTapAdd() {
         let noteEditViewController = NoteEditViewController()
+        noteEditViewController.delegate = self
         let navController = UINavigationController(rootViewController: noteEditViewController)
         presentViewController(navController, animated: true, completion: nil)
     }
