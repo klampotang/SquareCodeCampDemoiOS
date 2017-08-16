@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+protocol NoteEditViewControllerDelegate : class {
+    func editViewControllerDidCancel()
+    func editViewControllerDidSave()
+}
 class NoteEditViewController : UIViewController {
     
 }

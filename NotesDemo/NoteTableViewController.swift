@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NoteTableViewController: UITableViewController {
+class NoteTableViewController: UITableViewController, NoteEditViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,14 @@ class NoteTableViewController: UITableViewController {
     
     func didTapAdd() {
         let noteEditViewController = NoteEditViewController()
-        presentViewController(noteEditViewController, animated: true, completion: nil)
+        let navController = UINavigationController(rootViewController: noteEditViewController)
+        presentViewController(navController, animated: true, completion: nil)
+    }
+    func editViewControllerDidSave() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    func editViewControllerDidCancel() {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 }
