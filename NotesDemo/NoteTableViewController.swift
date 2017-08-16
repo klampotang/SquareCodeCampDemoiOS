@@ -21,7 +21,8 @@ class NoteTableViewController: UITableViewController {
     }
     
     func didTapAdd() {
-        
+        let noteEditViewController = NoteEditViewController()
+        presentViewController(noteEditViewController, animated: true, completion: nil)
     }
 
 }
