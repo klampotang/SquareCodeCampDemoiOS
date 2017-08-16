@@ -16,6 +16,7 @@
 		96AA3EB91F44B53900CF97B6 /* NotesDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA3EB81F44B53900CF97B6 /* NotesDemoUITests.swift */; };
 		96AA3EC71F44BBFE00CF97B6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA3EC61F44BBFE00CF97B6 /* Note.swift */; };
 		96AA3ECB1F44BD7000CF97B6 /* NoteEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96AA3ECA1F44BD7000CF97B6 /* NoteEditViewController.xib */; };
+		96AA3ECD1F44BEA400CF97B6 /* NoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA3ECC1F44BEA400CF97B6 /* NoteEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		96AA3EBA1F44B53900CF97B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96AA3EC61F44BBFE00CF97B6 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		96AA3ECA1F44BD7000CF97B6 /* NoteEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteEditViewController.xib; sourceTree = "<group>"; };
+		96AA3ECC1F44BEA400CF97B6 /* NoteEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				96AA3ECA1F44BD7000CF97B6 /* NoteEditViewController.xib */,
+				96AA3ECC1F44BEA400CF97B6 /* NoteEditViewController.swift */,
 				96AA3E971F44B53900CF97B6 /* NotesDemo */,
 				96AA3EAC1F44B53900CF97B6 /* NotesDemoTests */,
 				96AA3EB71F44B53900CF97B6 /* NotesDemoUITests */,
@@ -265,6 +268,7 @@
 			files = (
 				96AA3E9B1F44B53900CF97B6 /* NoteTableViewController.swift in Sources */,
 				96AA3E991F44B53900CF97B6 /* AppDelegate.swift in Sources */,
+				96AA3ECD1F44BEA400CF97B6 /* NoteEditViewController.swift in Sources */,
 				96AA3EC71F44BBFE00CF97B6 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
