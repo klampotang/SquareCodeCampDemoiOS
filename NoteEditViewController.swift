@@ -10,9 +10,18 @@ import Foundation
 import UIKit
 
 protocol NoteEditViewControllerDelegate : class {
-    func editViewControllerDidCancel()
-    func editViewControllerDidSave()
+    func editViewControllerDidCancel(viewController: NoteEditViewController)
+    func editViewControllerDidSave(viewController: NoteEditViewController)
 }
 class NoteEditViewController : UIViewController {
-    
+    override func viewDidLoad() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: #selector(NoteEditViewController.didTapCancel))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: #selector(NoteEditViewController.didTapSave))
+    }
+    func didTapCancel() {
+        
+    }
+    func didTapSave() {
+        
+    }
 }

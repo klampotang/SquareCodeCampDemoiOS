@@ -25,11 +25,11 @@ class NoteTableViewController: UITableViewController, NoteEditViewControllerDele
         let navController = UINavigationController(rootViewController: noteEditViewController)
         presentViewController(navController, animated: true, completion: nil)
     }
-    func editViewControllerDidSave() {
-        dismissViewControllerAnimated(true, completion: nil)
+    func editViewControllerDidSave(viewController: NoteEditViewController) {
+        viewController.dismissViewControllerAnimated(true, completion: nil)
     }
-    func editViewControllerDidCancel() {
-        dismissViewControllerAnimated(true, completion: nil)
+    func editViewControllerDidCancel(viewController: NoteEditViewController) {
+        viewController.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }
